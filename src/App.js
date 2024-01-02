@@ -3,7 +3,7 @@ import './App.css';
 import React from 'react';
 import 'semantic-ui-css/semantic.min.css'
 import icon from './assets/icon.png'
-import phone from './assets/phone.png';
+import guy from './assets/cropped-guy.png'
 import {Container} from 'semantic-ui-react'
 import ContactForm from './ContactForm';
 import AppInfoRow from './AppInfoRow';
@@ -11,13 +11,15 @@ import AppInfoRow from './AppInfoRow';
 function App() {
   return (
     <div className="App" style={{backgroundImage: "linear-gradient(#4880EC, navy)"}}>
-      <header className="App-header" style={{backgroundImage: "linear-gradient(white, #F0F0F0)"}}>
-      {/* <div style={{ backgroundImage: `url(${phone})`, backgroundSize: 'cover',}}> */}
-        <img className="ui small circular image" src={icon} alt="Call Pad Logo"/>
-        <h1 className="ui blue header">Call Pad Systems</h1>
-        <h3 className ="ui blue header">custom patient arrival and clinic solutions</h3>
-      {/* </div> */}
+      <header className="App-header">
+        <div className="App-header-phone" style={{backgroundImage: "linear-gradient(white, #F0F0F0)"}}>
+          <img className="ui small circular image" src={icon} alt="Call Pad Logo"/>
+          <h1 className="ui blue header">Call Pad Systems</h1>
+          <h3 className ="ui blue header">custom patient arrival and clinic solutions</h3>
+        </div>
         
+
+        <img className="ui medium image" src={guy} alt="cartoon patient holding crutches in the air"/>
       </header>
         
       <Container>
