@@ -8,16 +8,19 @@
 }
 
 .App-header {
-  height: 60vh;
-  width: 50vh;
+  height: 80vh;
+  width: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 25vh;
   background-color: white;
   margin-top: 25px;
   margin-bottom: 25px;
+  border-radius: 8vh;
+  border-color: black;
+  border-width: 1vh;
+  border-style: solid;
 }
 
 .App-link {

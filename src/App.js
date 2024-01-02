@@ -11,7 +11,7 @@ import AppInfoRow from './AppInfoRow';
 function App() {
   return (
     <div className="App" style={{backgroundImage: "linear-gradient(#4880EC, navy)"}}>
-      <header className="App-header" style={{backgroundImage: "radial-gradient(#F0F0F0, white)"}}>
+      <header className="App-header" style={{backgroundImage: "linear-gradient(white, #F0F0F0)"}}>
       {/* <div style={{ backgroundImage: `url(${phone})`, backgroundSize: 'cover',}}> */}
         <img className="ui small circular image" src={icon} alt="Call Pad Logo"/>
         <h1 className="ui blue header">Call Pad Systems</h1>
