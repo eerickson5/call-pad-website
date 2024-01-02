@@ -3,21 +3,25 @@ import './App.css';
 import React from 'react';
 import 'semantic-ui-css/semantic.min.css'
 import icon from './assets/icon.png'
+import phone from './assets/phone.png';
 import {Container} from 'semantic-ui-react'
 import ContactForm from './ContactForm';
 import AppInfoRow from './AppInfoRow';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{backgroundImage: "linear-gradient(#4880EC, navy)"}}>
       <header className="App-header">
-        <img class="ui small circular image" src={icon} alt="Call Pad Logo"/>
-        <h1 className="ui header">Call Pad Systems</h1>
-        <h3 className ="ui header">custom patient arrival and clinic solutions</h3>
+      {/* <div style={{ backgroundImage: `url(${phone})`, backgroundSize: 'cover',}}> */}
+        <img className="ui small circular image" src={icon} alt="Call Pad Logo"/>
+        <h1 className="ui grey inverted header">Call Pad Systems</h1>
+        <h3 className ="ui grey inverted header">custom patient arrival and clinic solutions</h3>
+      {/* </div> */}
+        
       </header>
         
       <Container>
-        <h2 className="ui header">The App</h2>
+        <h2 className="ui grey inverted header" style={{marginTop: "50px"}}>The App</h2>
         <AppInfoRow
         title="Patient Arrival Notifications"
         body="Send push notifications directly to employees' smart phones and watches whenever a patient arrives with a single tap."
