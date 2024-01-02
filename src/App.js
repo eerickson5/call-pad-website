@@ -11,11 +11,11 @@ import AppInfoRow from './AppInfoRow';
 function App() {
   return (
     <div className="App" style={{backgroundImage: "linear-gradient(#4880EC, navy)"}}>
-      <header className="App-header">
+      <header className="App-header" style={{backgroundImage: "radial-gradient(#F0F0F0, white)"}}>
       {/* <div style={{ backgroundImage: `url(${phone})`, backgroundSize: 'cover',}}> */}
         <img className="ui small circular image" src={icon} alt="Call Pad Logo"/>
-        <h1 className="ui grey inverted header">Call Pad Systems</h1>
-        <h3 className ="ui grey inverted header">custom patient arrival and clinic solutions</h3>
+        <h1 className="ui blue header">Call Pad Systems</h1>
+        <h3 className ="ui blue header">custom patient arrival and clinic solutions</h3>
       {/* </div> */}
         
       </header>
